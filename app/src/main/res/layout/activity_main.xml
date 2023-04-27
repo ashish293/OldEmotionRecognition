@@ -29,43 +29,53 @@
 
             <ImageView
                 android:id="@+id/image_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="360dp"
+                android:layout_height="207dp"
                 android:adjustViewBounds="true"
                 android:background="@android:color/darker_gray"
                 android:maxWidth="240dp"
                 android:maxHeight="240dp"
                 android:scaleType="centerCrop"
+                android:src="@drawable/theme_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.573"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.504" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            centerInParent="true"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/take_photo_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="@string/take_photo_button"
-                android:textSize="10sp" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/camera"
+                android:padding="10dp"
+                marginStart="10dp"
+                android:textSize="10sp" >
+            </Button>
 
-            <Button
-                android:id="@+id/pick_image_button"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="@string/pick_image_button"
-                android:textSize="10sp" />
-        </LinearLayout>
+<!--            <Button-->
+<!--                android:id="@+id/pick_image_button"-->
+<!--                alignParentRight="true"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_alignRight="@+id/take_photo_button"-->
+<!--                android:background="@drawable/folder"-->
+<!--                android:textSize="10sp"-->
+
+<!--                />-->
+        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
