@@ -51,6 +51,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="8dp"
+            android:paddingBottom="20dp"
             android:layout_gravity="center"
             centerInParent="true"
             android:orientation="horizontal">
@@ -70,7 +71,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_alignRight="@+id/take_photo_button"
-                android:background="@drawable/folder"
+                android:background="@drawable/galary"
 
                 android:textSize="10sp"
 
