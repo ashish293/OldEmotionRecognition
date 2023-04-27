@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ProgressBar
@@ -27,34 +26,38 @@
             android:layout_width="match_parent"
             android:layout_height="240dp">
 
-            <ImageView
-                android:id="@+id/image_view"
-                android:layout_width="360dp"
-                android:layout_height="207dp"
-                android:adjustViewBounds="true"
-                android:background="@android:color/darker_gray"
-                android:maxWidth="240dp"
-                android:maxHeight="240dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/theme_image"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.573"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.504" />
+            <androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="448dp"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/darker_gray"
+                    android:maxWidth="240dp"
+                    android:maxHeight="240dp"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/theme_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.513"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
+            centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="8dp"
-            android:paddingBottom="20dp"
-            android:layout_gravity="center"
-            centerInParent="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <Button
                 android:id="@+id/take_photo_button"
@@ -63,9 +66,11 @@
                 android:layout_height="70dp"
                 android:background="@drawable/camera"
                 android:padding="10dp"
-                android:textSize="10sp"></Button>
+                android:textSize="10sp">
 
-                        <Button
+            </Button>
+
+            <Button
                 android:id="@+id/pick_image_button"
                 alignParentRight="true"
                 android:layout_width="70dp"
