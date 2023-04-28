@@ -23,8 +23,9 @@
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="240dp">
+            android:layout_width="409dp"
+            android:layout_height="240dp"
+            tools:layout_editor_absoluteX="1dp">
 
 
             <ImageView
@@ -48,7 +49,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="106dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
@@ -58,28 +59,30 @@
 
             <Button
                 android:id="@+id/take_photo_button"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
                 android:background="@drawable/camera"
                 android:padding="10dp"
+                android:text=""
                 android:textSize="10sp">
 
             </Button>
 
             <Button
                 android:id="@+id/pick_image_button"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignRight="@+id/take_photo_button"
-                android:background="@drawable/galary"
-                android:textSize="10sp"
-
-                />
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/gallery"
+                android:text=""
+                android:textSize="10sp" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:layout_marginTop="12dp"
             android:background="@color/colorPrimaryDark" />
 
