@@ -22,6 +22,8 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="409dp"
             android:layout_height="240dp"
@@ -30,14 +32,14 @@
 
             <ImageView
                 android:id="@+id/image_view"
-                android:layout_width="601dp"
+                android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:adjustViewBounds="true"
                 android:background="@android:color/darker_gray"
                 android:maxWidth="240dp"
                 android:maxHeight="240dp"
 
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/theme_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -45,11 +47,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="106dp"
+            android:layout_height="94dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="12dp"
@@ -67,6 +70,8 @@
                 android:text=""
                 android:textSize="10sp">
 
+
+
             </Button>
 
             <Button
@@ -78,13 +83,45 @@
                 android:background="@drawable/gallery"
                 android:text=""
                 android:textSize="10sp" />
+
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/take_photo_button"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pick_image_button"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+        </LinearLayout>
+
+
+
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="12dp"
-            android:background="@color/colorPrimaryDark" />
+            android:background="@color/colorAccent" />
 
         <ExpandableListView
             android:id="@+id/classification_expandable_list_view"
