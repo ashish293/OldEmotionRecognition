@@ -16,6 +16,7 @@
         android:visibility="invisible"
         tools:visibility="visible" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +53,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:text="Select to Proceed"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="94dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
@@ -67,10 +87,7 @@
                 android:layout_marginLeft="60dp"
                 android:background="@drawable/camera"
                 android:padding="10dp"
-                android:text=""
                 android:textSize="10sp">
-
-
 
             </Button>
 
@@ -81,7 +98,6 @@
                 android:layout_alignRight="@+id/take_photo_button"
                 android:layout_marginLeft="120dp"
                 android:background="@drawable/gallery"
-                android:text=""
                 android:textSize="10sp" />
 
 
@@ -113,8 +129,6 @@
 
             />
         </LinearLayout>
-
-
 
 
         <View
