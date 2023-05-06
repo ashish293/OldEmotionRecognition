@@ -40,7 +40,7 @@
                 android:maxWidth="240dp"
                 android:maxHeight="240dp"
 
-                android:scaleType="fitXY"
+                android:scaleType="fitCenter"
                 android:src="@drawable/theme_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
