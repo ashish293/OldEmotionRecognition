@@ -33,10 +33,10 @@
 
             <ImageView
                 android:id="@+id/image_view"
-                android:layout_width="match_parent"
+                android:layout_width="420dp"
                 android:layout_height="250dp"
                 android:adjustViewBounds="true"
-                android:background="@android:color/darker_gray"
+                android:background="@android:color/white"
                 android:maxWidth="240dp"
                 android:maxHeight="240dp"
 
@@ -44,10 +44,9 @@
                 android:src="@drawable/theme_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.513"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
